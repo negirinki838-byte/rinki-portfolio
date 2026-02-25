@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rinki Negi | Cybersecurity Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">Rinki Negi</div>
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+
+    <nav id="nav">
+        <a href="#home">Home</a>
+        <a href="#learning">Assignments & Learning</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section id="home">
+    <h1>Hello, I'm Rinki 👋</h1>
+    <p>B.Tech CSE | Cybersecurity Specialization</p>
+
+    <h3>🎥 Self Introduction</h3>
+    <video width="300" controls>
+        <source src="videos/intro.mp4" type="video/mp4">
+    </video>
+</section>
+
+<section id="learning">
+    <h2>📂 Assignments & Learning</h2>
+
+    <h3>📘 Data Structures</h3>
+    <p><a href="assignments/dsa1.pdf" target="_blank">Assignment 1</a></p>
+
+    <h3>📅 Daily Learning</h3>
+    <p>Day 1 – Built my portfolio website.</p>
+</section>
+
+<section id="achievements">
+    <h2>🏆 Achievements & Certifications</h2>
+    <p>Cybersecurity Workshop Participant</p>
+</section>
+
+<section id="contact">
+    <h2>📩 Contact</h2>
+    <p>Email: rinkinegi994@gmail.com</p>
+</section>
+
+<script>
+function toggleMenu() {
+    var nav = document.getElementById("nav");
+    if (nav.style.display === "flex") {
+        nav.style.display = "none";
+    } else {
+        nav.style.display = "flex";
+    }
+}
+</script>
+
+</body>
+</html>
