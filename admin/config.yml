@@ -1,0 +1,17 @@
+backend:
+  name: github
+  repo:negirinki838-byte/rinki-portfolio
+  branch: main
+
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+
+collections:
+  - name: "learning"
+    label: "Daily Learning"
+    folder: "content"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string }
+      - { label: "Body", name: "body", widget: "markdown" }
